@@ -5,7 +5,7 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	
 	int n;
-	int mas[100];
+	int *mas = new int[n];
 	printf("Введите количество элементов : ");
 	scanf("%i", &n);
 	
@@ -19,4 +19,6 @@ int main()
 	{
 		printf("%i ",mas[i]);
 	}
+	
+	delete[] mas;
 }
